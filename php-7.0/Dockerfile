@@ -1,4 +1,4 @@
-FROM php:7
+FROM php:7.0
 RUN apt-get update && apt-get install -y curl sudo git libxslt-dev mercurial zlib1g-dev
 RUN docker-php-ext-install soap
 RUN docker-php-ext-install zip
