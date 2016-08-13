@@ -4,10 +4,22 @@ This repository contains Docker images for PHP 5.5 and higher which are based on
 
 These images contain the following additions to the vanilla PHP images:
 
-* Version control packages (git, mercurial)
+* Version control packages (git, mercurial, subversion)
 * composer
-* Various PHP extensions (gettext, mbstring, soap, xsl, zip)
-* xdebug
+* PHP extensions:
+   * curl
+   * gettext
+   * intl
+   * json
+   * mcrypt
+   * mbstring
+   * mysql (php-5.5 and php-5.6 images only)
+   * opcache
+   * pdo_mysql
+   * soap
+   * xsl
+   * zip
+   * xdebug
 
 ## Pull images
 
