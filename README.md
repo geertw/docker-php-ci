@@ -31,6 +31,12 @@ The following tags are available:
 * 5.6
 * 7.0
 
+There are also tags without xdebug. 
+
+* 5.5-no-xdebug
+* 5.6-no-xdebug
+* 7.0-no-xdebug
+
 ## Build process
 
 The Dockerfiles are stored in directories for each image version. Docker Hub builds new images automatically when this repository or the PHP base images are updated.
