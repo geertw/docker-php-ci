@@ -30,12 +30,14 @@ The following tags are available:
 * 5.5
 * 5.6
 * 7.0
+* 7.1
 
 There are also tags without xdebug. 
 
 * 5.5-no-xdebug
 * 5.6-no-xdebug
 * 7.0-no-xdebug
+* 7.1-no-xdebug
 
 ## Build process
 
