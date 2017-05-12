@@ -1,7 +1,7 @@
 FROM php:5.6
 
 RUN apt-get update \
-  && apt-get install -y libcurl4-openssl-dev sudo git libxslt-dev mercurial subversion zlib1g-dev graphviz zip libmcrypt-dev libicu-dev g++ \
+  && apt-get install -y libcurl4-openssl-dev sudo git libxslt-dev mercurial subversion zlib1g-dev graphviz zip libmcrypt-dev libicu-dev g++ libpcre3-dev \
   && apt-get clean \
   && docker-php-ext-install soap \
   && docker-php-ext-install zip \
