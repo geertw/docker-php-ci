@@ -1,7 +1,7 @@
 FROM php:5.5
 
 RUN apt-get update \
-  && apt-get install -y libcurl4-openssl-dev sudo git libxslt-dev mercurial subversion zlib1g-dev graphviz zip libmcrypt-dev libicu-dev g++ \
+  && apt-get install -y libcurl4-openssl-dev sudo git libxslt-dev mercurial subversion zlib1g-dev graphviz zip libmcrypt-dev libicu-dev g++ libgd-dev \
   && apt-get clean \
   && docker-php-ext-install soap \
   && docker-php-ext-install zip \
@@ -14,6 +14,7 @@ RUN apt-get update \
   && docker-php-ext-install pdo_mysql \
   && docker-php-ext-install json \
   && docker-php-ext-install intl \
-  && docker-php-ext-install opcache
+  && docker-php-ext-install opcache \
+  && docker-php-ext-install gd
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

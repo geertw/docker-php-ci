@@ -8,6 +8,7 @@ These images contain the following additions to the vanilla PHP images:
 * composer
 * PHP extensions:
    * curl
+   * gd
    * gettext
    * intl
    * json
