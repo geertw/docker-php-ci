@@ -6,6 +6,7 @@ These images contain the following additions to the vanilla PHP images:
 
 * Version control packages (git, mercurial, subversion)
 * composer
+* node.js and npm
 * PHP extensions:
    * curl
    * gd
@@ -15,6 +16,7 @@ These images contain the following additions to the vanilla PHP images:
    * mcrypt
    * mbstring
    * mysql (php-5.5 and php-5.6 images only)
+   * mysqlnd (php-7.0+ images)
    * opcache
    * pdo_mysql
    * soap
@@ -43,6 +45,15 @@ There are also tags without xdebug.
 ## Build process
 
 The Dockerfiles are stored in directories for each image version. Docker Hub builds new images automatically when this repository or the PHP base images are updated.
+
+To build these images yourself, use:
+
+```
+docker build -t php-7.0 php-7.0/
+docker build -t php-7.1 php-7.1/
+```
+
+etc.
 
 ## License
 
