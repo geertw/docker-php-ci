@@ -1,16 +1,17 @@
 FROM php:5.6
 
 RUN apt-get update \
-  && apt-get install -y libcurl4-openssl-dev sudo git libxslt-dev mercurial subversion zlib1g-dev graphviz zip libmcrypt-dev libicu-dev g++ nodejs npm \
+  && apt-get install -y libcurl4-openssl-dev sudo git libxslt-dev mercurial subversion zlib1g-dev graphviz zip libmcrypt-dev libicu-dev g++ nodejs npm libpng-dev \
   && apt-get clean \
   && docker-php-ext-install soap \
   && docker-php-ext-install zip \
   && docker-php-ext-install xsl \
+  && docker-php-ext-install gd \
   && docker-php-ext-install mcrypt \
   && docker-php-ext-install mbstring \
   && docker-php-ext-install gettext \
   && docker-php-ext-install curl \
-  && docker-php-ext-install mysql \
+  && docker-php-ext-install mysqli \
   && docker-php-ext-install pdo_mysql \
   && docker-php-ext-install json \
   && docker-php-ext-install intl \
