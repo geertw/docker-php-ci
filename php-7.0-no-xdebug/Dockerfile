@@ -24,5 +24,5 @@ RUN npm install -g bower grunt-cli
 RUN echo '{ "allow_root": true, "storage": {"packages": ".bower-cache/"} }' > ~/.bowerrc
 RUN echo 'cache=.node-cache' > ~/.npmrc
 RUN echo '{ "config": { "cache-dir": ".composer-cache" } }' > ~/.composer/composer.json
-RUN composer global require --no-progress --no-interaction --no-suggest deployer/deployer
+RUN composer global require --no-progress --no-interaction --no-suggest deployer/deployer deployer/recipes
 RUN ln -s ~/.composer/vendor/bin/dep /usr/bin/deployer
