@@ -24,7 +24,7 @@ RUN npm install -g bower grunt-cli
 RUN echo '{ "allow_root": true, "storage": {"packages": ".bower-cache/"} }' > ~/.bowerrc
 RUN echo 'cache=.node-cache' > ~/.npmrc
 RUN echo '{ "config": { "cache-dir": ".composer-cache" } }' > ~/.composer/composer.json
-RUN composer global require --no-progress --no-interaction --no-suggest deployer/deployer deployer/recipes
+RUN composer global require --no-progress --no-interaction --no-suggest deployer/deployer deployer/recipes hirak/prestissimo
 RUN ln -s ~/.composer/vendor/bin/dep /usr/bin/deployer
 RUN curl -O https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh && chmod +x wait-for-it.sh && ln -s ~/wait-for-it.sh /usr/bin/wait-for-it
 
