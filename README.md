@@ -8,21 +8,21 @@ These images contain the following additions to the vanilla PHP images:
 * composer
 * node.js and npm
 * PHP extensions:
-   * curl
-   * gd
-   * gettext
-   * intl
-   * json
-   * mcrypt
-   * mbstring
-   * mysql (php-5.5 and php-5.6 images only)
-   * mysqlnd (php-7.0+ images)
-   * opcache
-   * pdo_mysql
-   * soap
-   * xsl
-   * zip
-   * xdebug
+  * curl
+  * gd
+  * gettext
+  * intl
+  * json
+  * mcrypt
+  * mbstring
+  * mysql (php-5.5 and php-5.6 images only)
+  * mysqlnd (php-7.0+ images)
+  * opcache
+  * pdo_mysql
+  * soap
+  * xsl
+  * zip
+  * xdebug
 
 ## Pull images
 
@@ -35,7 +35,7 @@ The following tags are available:
 * 7.0
 * 7.1
 
-There are also tags without xdebug. 
+There are also tags without xdebug.
 
 * 5.5-no-xdebug
 * 5.6-no-xdebug
@@ -48,7 +48,7 @@ The Dockerfiles are stored in directories for each image version. Docker Hub bui
 
 To build these images yourself, use:
 
-```
+```bash
 docker build -t php-7.0 php-7.0/
 docker build -t php-7.1 php-7.1/
 ```
@@ -58,4 +58,3 @@ etc.
 ## License
 
 The Dockerfiles are licensed under the MIT license, see LICENSE for details.
-
