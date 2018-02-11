@@ -23,6 +23,7 @@ These images contain the following additions to the vanilla PHP images:
   * xsl
   * zip
   * xdebug
+  * sodium (php-7.2+ images)
 
 ## Pull images
 
@@ -34,6 +35,7 @@ The following tags are available:
 * 5.6
 * 7.0
 * 7.1
+* 7.2
 
 There are also tags without xdebug.
 
@@ -41,6 +43,7 @@ There are also tags without xdebug.
 * 5.6-no-xdebug
 * 7.0-no-xdebug
 * 7.1-no-xdebug
+* 7.2-no-xdebug
 
 ## Build process
 
@@ -51,6 +54,7 @@ To build these images yourself, use:
 ```bash
 docker build -t php-7.0 php-7.0/
 docker build -t php-7.1 php-7.1/
+docker build -t php-7.2 php-7.2/
 ```
 
 etc.
