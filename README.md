@@ -6,7 +6,7 @@ These images contain the following additions to the vanilla PHP images:
 
 * Version control packages (git, mercurial, subversion)
 * composer
-* node.js and npm
+* node.js 12 and npm
 * PHP extensions:
   * curl
   * gd
